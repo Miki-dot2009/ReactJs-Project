@@ -1,0 +1,28 @@
+.cardsFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    direction: ltr
+    
+}
+.cardItem {
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    width: 250px;
+    height: 350px;
+    background-color: #ddcdcd;
+    text-align: center;
+
+    
+}
+button {
+    padding: 10px;
+    background: transparent;
+    text-shadow: 1px 1px 1px #202020;
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+    border: 1px solid rgb(228, 62, 62);
+    color: rgb(236, 0, 0);
+  }
