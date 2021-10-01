@@ -13,12 +13,21 @@ const Menu = (props) => {
                     <img src="imageDash.jpg" alt="dish" style={{ width: '100px' }} />
                     <div className="cardDescp">
                         <h4>{props.ItemName}</h4>
+                        <h4 style={{ color: 'red' }}>{props.Available} </h4>
+                        <span style={{ textAlign: 'left', fontSize: '18pt' }}><b>{props.Price}</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span>
+                        <button onClick={() => setCount(count + 1)}><b>Quantity {count}</b></button>
+                    </div>
+                </div>
+                <div className="cardItem">
+                    <img src="imageDash.jpg" alt="dish" style={{ width: '100px' }} />
+                    <div className="cardDescp">
+                        <h4>{props.ItemName}</h4>
                         <h4 style={{ color: 'red' }}>{props.Available}</h4>
                         <span style={{ textAlign: 'left', fontSize: '18pt' }}><b>{props.Price}</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span>
                         <button onClick={() => setCount(count + 1)}><b>Quantity {count}</b></button>
                     </div>
                 </div>
-                {<div className="cardItem">
+                <div className="cardItem">
                     <img src="imageDash.jpg" alt="dish" style={{ width: '100px' }} />
                     <div className="cardDescp">
                         <h4>{props.ItemName}</h4>
@@ -26,29 +35,18 @@ const Menu = (props) => {
                         <span style={{ textAlign: 'left', fontSize: '18pt' }}><b>{props.Price}</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span>
                         <button onClick={() => setCount(count + 1)}><b>Quantity {count}</b></button>
                     </div>
-                </div>}
-                {<div className="cardItem">
+                </div>
+                <div className="cardItem">
                     <img src="imageDash.jpg" alt="dish" style={{ width: '100px' }} />
                     <div className="cardDescp">
                         <h4>{props.ItemName}</h4>
                         <h4 style={{ color: 'red' }}>{props.Available}</h4>
                         <span style={{ textAlign: 'left', fontSize: '18pt' }}><b>{props.Price}</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span>
-                        <button><b>Quantity</b></button>
+                         <button onClick={() => setCount(count + 1)}><b>Quantity {count}</b></button>
                     </div>
-                </div>}
-                {<div className="cardItem">
-                    <img src="imageDash.jpg" alt="dish" style={{ width: '100px' }} />
-                    <div className="cardDescp">
-                        <h4>{props.ItemName}</h4>
-                        <h4 style={{ color: 'red' }}>{props.Available}</h4>
-                        <span style={{ textAlign: 'left', fontSize: '18pt' }}><b>{props.Price}</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </span>
-                        <button><b>Quantity</b></button>
-                    </div>
-                </div>}
+                </div>
             </div>
             
-
-            </div>
         </div>
     )
 }
