@@ -1,3 +1,6 @@
+body {
+    background-color: #311c1c;
+}
 .cardsFlex {
     display: flex;
     flex-wrap: wrap;
